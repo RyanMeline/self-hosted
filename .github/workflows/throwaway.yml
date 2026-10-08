@@ -1,0 +1,10 @@
+name: Call Self Hosted
+on:
+  workflow_dispatch:
+
+jobs:
+  hi:
+    runs-on: self-hosted
+    steps:
+      - name: hi
+        run: echo "hello world"
