@@ -4,7 +4,7 @@ on:
 
 jobs:
   hi:
-    runs-on: self-hosted
+    runs-on: [self-hosted, random-label]
     steps:
       - name: hi
         run: echo "hello world"
