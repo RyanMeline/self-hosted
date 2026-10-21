@@ -8,3 +8,8 @@ jobs:
     steps:
       - name: hi
         run: echo "hello world"
+  other_one:
+    runs-on: [self-hosted, vagrant]
+    steps:
+      - name: test
+        run: echo "hello from vagrant"
