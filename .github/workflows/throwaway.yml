@@ -13,8 +13,3 @@ jobs:
     steps:
       - name: test
         run: echo "Hello from vagrant"
-  random-label-test:
-    runs-on: [self-hosted, random-label]
-    steps:
-      - name: random
-        run: echo "random-label"
