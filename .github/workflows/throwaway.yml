@@ -1,20 +1,20 @@
-name: Call Self Hosted
+name: Test self hosted runner labels
 on:
   workflow_dispatch:
 
 jobs:
-  hi:
-    runs-on: [self-hosted, random-label]
+  ec2:
+    runs-on: [self-hosted, ec2]
     steps:
       - name: hi
-        run: echo "hello world"
-  other_one:
+        run: echo "Hello from the ec2 instance"
+  vagrant:
     runs-on: [self-hosted, vagrant]
     steps:
       - name: test
-        run: echo "hello from vagrant"
-  third-times-the-charm:
-    runs-on: [self-hosted, ec2]
+        run: echo "Hello from vagrant"
+  random-label-test:
+    runs-on: [self-hosted, random-label]
     steps:
-      - name: test
-        run: echo "Hello from the ec2 instance"
+      - name: random
+        run: echo "random-label"
