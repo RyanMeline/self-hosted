@@ -13,3 +13,8 @@ jobs:
     steps:
       - name: test
         run: echo "hello from vagrant"
+  third-times-the-charm:
+    runs-on: [self-hosted, ec2]
+    steps:
+      - name: test
+        run: echo "Hello from the ec2 instance"
